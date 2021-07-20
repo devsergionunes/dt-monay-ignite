@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import { Dashbord } from "./Components/Dashbord/Dashbord";
+import { Header } from "./Components/Header/Header";
+import { NewTrasactionModal } from "./Components/NewTransactionModal/NewTransactioModal";
+import { TrasactionContextProvider } from "./hooks/useTrasactions";
+
+import { GlobalStyle } from "./style/GlobalStyle";
+
+
+export function App() {
+  const [isNewTrasactionOpenModal, setNewTrasactionOpenModal] = React.useState(false)
+
+  function hendleOpenModal() {
+    setNewTrasactionOpenModal(true)
+  }
+  function hendleCloseModal() {
+    setNewTrasactionOpenModal(false)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TrasactionContextProvider>
+      <Header OnOpenNewTrasactionModal={hendleOpenModal} />
+      <Dashbord />
+      <NewTrasactionModal
+        isOpen={isNewTrasactionOpenModal}
+        onRequestClose={hendleCloseModal}
+      />
+      <GlobalStyle />
+    </TrasactionContextProvider>
   );
 }
 
-export default App;

@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+<img src="./src/assests/logo.svg">
+<div align='center'>
+  <img src="./src/assests/apresentacao.gif"></img>
+  <p> dt money</p>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Informaçoes:
 
-## Available Scripts
+## Aplicaçao dt money:
 
-In the project directory, you can run:
+- Aplicaçao com finalidade de controle financeiro
+- Gerencia gastos/ganhos
+<hr>
 
-### `npm start`
+## Tecnologias:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### React:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Utilizando a metodologia de contextos para compartilhar informaçoes em diferentes componentes.
+- Hooks customizados para reaproveitar logica em diferentes paginas.
+- Utilizando biblioteca react-modal para a funcionalidade de criaçao de trasações.
 
-### `npm test`
+### styled-Components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Toda parte de estilo da aplicaçao vem dessa incrivel biblioteca de css-in-js.
+- Metodologia de estilizações globais usando variaveis css e unidade de medida REM.
+- Uso de funçoes javascript e variaveis apartir do repasse de propriedade.
+- Integraçao com a biblioteca polished para executa suas funções de estilos.
 
-### `npm run build`
+### Typescript:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Uso de tipagem estatica de variaveis para uma melhor experiencia e facilidade no desenvolvimento.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Miragejs:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Integraçao com essa Fake Api para realiza requisiçoes http sem back-end.
+- Post e Get realizado apartir de sua funcionalidade de interceptaçao de rotas.
 
-### `npm run eject`
+### Axios:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Biblioteca usada nas requisições http.
+- Escolhida por conta da sua funcionalidade de criar uma variavel baseURL e faciliade de manipular dados.
+<hr>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Style:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<pre>
+  variaveis css:
+    --red: #f52f4d;
+    --blue: #5429cc;
+    --blue-light: #6933ff;
+    --green: #33CC95;
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    --text-title: #363f5f;
+    --text-body: #969cb3;
+    
+    --background: #f0f2f5;
+    --shape: #fff;
+</pre>
 
-## Learn More
+## Links:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- <a href='https://github.com/facebook/react'>React</a>
+- <a href='https://github.com/styled-components/styled-components'>Styled-Components</a>
+- <a href='https://github.com/styled-components/polished'>Polished</a>
+- <a href='https://www.typescriptlang.org/'>Typescript</a>
+- <a href='https://miragejs.com/'>Miragejs</a>
+- <a href='https://axios-http.com/docs/intro'>Axios</a>
+- <a href='https://rocketseat.com.br/'>Rocketseat</a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<hr>
+
+## Considerações:
+
+<pre>
+    Aplicaçao desenvolvida junto ao Bootcamp iginite da <a href='https://rocketseat.com.br/'>Rocketseat</a>.
+</pre>
